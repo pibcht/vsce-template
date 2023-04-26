@@ -1,0 +1,21 @@
+{
+  "publisher": "publisher",
+  "name": "extension-name",
+  "version": "0.0.0",
+  "engines": { "vscode": "^1.0.0" },
+  "categories": [
+    "Azure", "Data Science", "Debuggers", "Education", "Extension Packs", 
+    "Formatters", "Keymaps", "Language Packs", "Linters", "Machine Learning", 
+    "Notebooks", "Other", "Programming Languages", "SCM Providers", "Snippets", 
+    "Testing", "Themes", "Visualization"
+  ],
+  "displayName": "Extension Name",
+  "description": "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn",
+  "icon": "icon.png",
+  "author": { "name": "Author Name", "email": "author@ema.il" },
+  "keywords": [ "Foo", "Bar", "Baz" ],
+  "homepage": "https://github.com/publisher/extension-name",
+  "repository": { "type": "git", "url": "https://github.com/publisher/extension-name.git" },
+  "bugs": { "url": "https://github.com/publisher/extension-name/issues" },
+  "extensionPack": []
+}

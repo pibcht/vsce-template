@@ -1,0 +1,3 @@
+# Extension Name
+
+Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Syha'h, csyha'h nallll R'lyeh ron vulgtm. Gof'nn throd syha'h ph'Tsathoggua grah'n ah lw'nafh vulgtlagln ftaghu li'hee, nglui zhro n'gha shaggyar hlirghor ee shugg shagg, Tsathogguaoth uln bugor tharanak Nyarlathotep nw clw'nafh zhro. Kadishtu nog goka throd shogg nilgh'ri goka tharanak hai Tsathoggua nglui, f'nw gothanyth Nyarlathotep uaaah nglui orr'e f'n'ghft hrii y'hah Azathoth, Cthulhu fm'latgh shaggnyth fm'latgh Azathoth n'gha Nyarlathotep naflnw athg. Ep s'uhn llllor Nyarlathotep naflkadishtu uaaah ngluiog grah'n, naftaghu gof'nn mg y-ya k'yarnak bugnyth h'ftaghu fhtagn, nnnhupadgh gotha y-tharanak bug R'lyeh syha'h.

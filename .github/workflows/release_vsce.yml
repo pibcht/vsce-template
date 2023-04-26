@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  run_vsce:
+    name: Release Visual Studio Code Extension
+    runs-on: ubuntu-latest
+    container:
+      image: alpine:latest
+    steps:
+      - name: Install vsce
+        id: vsce
+        run: |
+          apk add --no-cache --update npm
+          npm install --global @vscode/vsce
+      - name: Checkout repository
+        id: checkout
+        if: steps.vsce.outcome == 'success'
+        uses: actions/checkout@v3
+      - name: Build the Extension
+        id: build
+        if: steps.checkout.outcome == 'success'
+        run: |
+          cd extension
+          vsce package
+      - name: Publish the Extension
+        id: publish
+        if: steps.build.outcome == 'success'
+        run: |
+          vsce publish --packagePath extension/*.vsix --pat ${{ secrets.VSCE_TOKEN }}
