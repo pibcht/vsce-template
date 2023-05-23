@@ -1,11 +1,11 @@
 on:
   push:
     branches:
-      - release
+      - prerelease
 
 jobs:
   run_vsce:
-    name: Release Visual Studio Code Extension
+    name: Pre-Release Visual Studio Code Extension
     runs-on: ubuntu-latest
     container:
       image: alpine:latest
@@ -24,9 +24,9 @@ jobs:
         if: steps.checkout.outcome == 'success'
         run: |
           cd extension
-          vsce package --githubBranch release
+          vsce package --githubBranch prerelease --pre-release
       - name: Publish the Extension
         id: publish
         if: steps.build.outcome == 'success'
         run: |
-          vsce publish --packagePath extension/*.vsix --githubBranch release --pat ${{ secrets.VSCE_TOKEN }}
+          vsce publish --packagePath extension/*.vsix --githubBranch prerelease --pre-release --pat ${{ secrets.VSCE_TOKEN }}
